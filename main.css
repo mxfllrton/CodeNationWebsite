@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.menu-bar
+{
+    background: white;
+    text-align: end;
+}
+
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li
+{
+    width: 126px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+  
+.menu-bar ul li a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+.active, .menu-bar ul li:hover
+{
+    background: #ABD4DE;
+    border-radius: 3px;
+
+}
+
+.sub-menu
+{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu
+{
+    display: block;
+    position: absolute;
+    background-color: #ABD4DE;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu ul
+{   
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu ul li
+{   
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu ul li:last-child
+{   
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu ul li a:hover
+{   
+    color: white;
+}
+
+.fa 
+{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-bar .fa
+{
+    margin-left: 8px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+img {
+    padding: 15px;
+    object-fit: contain;
+    max-width: 25%;
+}
+
+
